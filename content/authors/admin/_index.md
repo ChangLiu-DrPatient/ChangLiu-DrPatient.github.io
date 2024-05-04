@@ -37,10 +37,10 @@ interests:
 education:
   courses:
     - course: PhD student in Computational Biology
-      institution: Carnegie Mellon University
+      institution: School of Computer Science, Carnegie Mellon University
       year: 2028 (est)
     - course: BEng in Computer Science
-      institution: Tsinghua University
+      institution: Institute for Interdisciplinary Sciences (Yao Class), Tsinghua University
       year: 2023
 
 # Skills
