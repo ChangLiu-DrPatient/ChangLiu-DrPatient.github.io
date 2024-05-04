@@ -17,7 +17,7 @@ status:
 superuser: true
 
 # Role/position/tagline
-role: Ph.D. in Computational Biology
+role: Ph.D. student in Computational Biology
 
 # Organizations/Affiliations to show in About widget
 organizations:
@@ -36,7 +36,7 @@ interests:
 # Education to show in About widget
 education:
   courses:
-    - course: PhD in Computational Biology
+    - course: PhD student in Computational Biology
       institution: Carnegie Mellon University
       year: 2028 (est)
     - course: BEng in Computer Science
@@ -88,5 +88,5 @@ social:
 # Highlight the author in author lists? (true/false)
 highlight_name: true
 ---
-Chang Liu is a Ph.D. in Computational Biology at the CMU Auton Lab. His research interests include machine learning in healthcare, medical AI, and deep learning.
+Chang Liu is a Ph.D. student in Computational Biology at the CMU Auton Lab. His research interests include machine learning in healthcare, medical AI, and deep learning.
 {style="text-align: justify;"}
