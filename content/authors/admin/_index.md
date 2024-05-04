@@ -65,7 +65,7 @@ skills:
       - name: Piano
         description: ''
         percent: 100
-        icon: musc
+        icon: music
         icon_pack: fas
       - name: Swimming
         description: ''
