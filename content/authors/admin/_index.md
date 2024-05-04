@@ -37,7 +37,7 @@ interests:
 education:
   courses:
     - course: PhD in Computational Biology
-      institution: Stanford University
+      institution: Carnegie Mellon University
       year: 2028 (est)
     - course: BEng in Computer Science
       institution: Tsinghua University
@@ -55,7 +55,7 @@ skills:
         icon_pack: fab
       - name: Statistics
         description: ''
-        percent: 100
+        percent: 80
         icon: chart-line
         icon_pack: fas
   - name: Hobbies
