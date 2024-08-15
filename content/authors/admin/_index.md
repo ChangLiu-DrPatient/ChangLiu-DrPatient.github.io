@@ -17,7 +17,7 @@ status:
 superuser: true
 
 # Role/position/tagline
-role: Ph.D. student in Computational Biology
+role: Ph.D. student in Machine Learning
 
 # Organizations/Affiliations to show in About widget
 organizations:
