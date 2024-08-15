@@ -36,7 +36,7 @@ interests:
 # Education to show in About widget
 education:
   courses:
-    - course: PhD student in Computational Biology
+    - course: PhD student in Machine Learning
       institution: School of Computer Science, Carnegie Mellon University
       year: 2028 (est)
     - course: BEng in Computer Science
