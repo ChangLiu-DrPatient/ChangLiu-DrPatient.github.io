@@ -40,7 +40,7 @@ education:
       institution: School of Computer Science, Carnegie Mellon University
       year: 2028 (est)
     - course: BEng in Computer Science
-      institution: Institute for Interdisciplinary Sciences (Yao Class), Tsinghua University
+      institution: Yao Class (Institute for Interdisciplinary Sciences), Tsinghua University
       year: 2023
 
 # Skills
