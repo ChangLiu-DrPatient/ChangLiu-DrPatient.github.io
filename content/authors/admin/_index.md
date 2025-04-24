@@ -88,5 +88,5 @@ social:
 # Highlight the author in author lists? (true/false)
 highlight_name: true
 ---
-Chang Liu is a Ph.D. student in Machine Learning at the CMU Auton Lab. His research interests include machine learning in healthcare, medical AI, and deep learning.
+Chang Liu is a Ph.D. student in Machine Learning at the CMU Auton Lab. His research interests include LLM post-training, machine learning in healthcare, medical AI, and deep learning.
 {style="text-align: justify;"}
