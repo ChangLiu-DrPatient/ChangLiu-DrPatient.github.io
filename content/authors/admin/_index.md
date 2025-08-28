@@ -25,13 +25,13 @@ organizations:
     url: https://www.cs.cmu.edu/
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include machine learning in healthcare, medical AI, and deep learning.
+bio: My research interests include agentic AI, LLM post-training, and machine learning in healthcare.
 
 # Interests to show in About widget
 interests:
-  - Deep Learning
+  - Agentic AI
+  - LLM Post-training
   - Machine Learning in Healthcare
-  - Medical AI
 
 # Education to show in About widget
 education:
@@ -88,5 +88,5 @@ social:
 # Highlight the author in author lists? (true/false)
 highlight_name: true
 ---
-Chang Liu is a Ph.D. student in Machine Learning at the CMU Auton Lab. His research interests include LLM post-training, machine learning in healthcare, medical AI, and deep learning.
+Chang Liu is a Ph.D. student in Machine Learning at the CMU Auton Lab. His research interests include agentic AI, LLM post-training, and machine learning in healthcare.
 {style="text-align: justify;"}
