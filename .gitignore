@@ -1,0 +1,9 @@
+# CV LaTeX source — kept out of the public repo because it contains a phone number.
+# Only the compiled PDF (without it, if you prefer) belongs on the site.
+cv_changliu.tex
+*.aux
+*.log
+*.out
+*.synctex.gz
+
+.DS_Store
