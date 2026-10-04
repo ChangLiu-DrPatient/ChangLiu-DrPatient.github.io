@@ -188,38 +188,6 @@ h1 {
   transition: color .18s var(--ease), text-decoration-color .18s var(--ease);
 }
 .affil a:hover { color: var(--signal); text-decoration-color: currentColor; }
-/* ============================================================
-   Research
-   ============================================================ */
-.fronts { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
-.front { padding-right: clamp(1.5rem, 3.5vw, 2.75rem); }
-.front + .front {
-  border-left: 1px solid var(--hair);
-  padding-left: clamp(1.5rem, 3.5vw, 2.75rem);
-  padding-right: 0;
-}
-@media (max-width: 720px) {
-  .fronts { grid-template-columns: 1fr; }
-  .front { padding-right: 0; }
-  .front + .front {
-    border-left: none; border-top: 1px solid var(--hair);
-    padding-left: 0; padding-top: 1.6rem; margin-top: 1.6rem;
-  }
-}
-.front h3 {
-  font-family: var(--serif); font-weight: 600;
-  font-size: 1.14rem; line-height: 1.3;
-  letter-spacing: -.01em; margin: 0 0 .6rem;
-  text-wrap: balance;
-}
-.front--health h3 { color: var(--signal); }
-.front--llm h3 { color: var(--gold); }
-.front p {
-  color: var(--muted); font-size: .97rem;
-  line-height: 1.6; max-width: 46ch;
-}
-.front p strong { color: var(--ink); font-weight: 600; }
-
 .links { display: flex; flex-wrap: wrap; gap: .45rem; margin: 1.5rem 0 0; padding: 0; list-style: none; }
 .links a {
   display: inline-flex; align-items: center; gap: .42rem;
@@ -365,7 +333,6 @@ footer { border-top: 1px solid var(--hair); padding-block: 1.5rem 2.25rem; }
   <div class="wrap nav-in">
     <a class="nav-mark" href="#top">Chang Liu <span>/</span> CMU</a>
     <div class="nav-links">
-      <a href="#research">Research</a>
       <a href="#education">Education</a>
       <a href="#industry">Industry</a>
       <a href="#publications">Publications</a>
@@ -387,7 +354,7 @@ footer { border-top: 1px solid var(--hair); padding-block: 1.5rem 2.25rem; }
       <h1>Chang Liu</h1>
       <div class="affil">
         <p>I am a Ph.D. student in the Machine Learning Department at Carnegie Mellon University and a member of the Auton Lab, advised by Prof. Artur Dubrawski. I did my undergraduate studies in the Yao Class at Tsinghua University.</p>
-        <p>My research spans machine learning for healthcare and LLM post-training. My work aims to democratize expertise: on the healthcare side, I develop affordable outbreak detection systems for hospitals using multimodal ML; on the LLM side, I design learning scaffolds for LLM post-training, inspired by the cognitive learning strategies of humans.</p>
+        <p>My research spans machine learning for healthcare and LLM post-training. My work aims to democratize expertise: on the healthcare side, I develop affordable outbreak detection systems for hospitals using multimodal ML on routinely collected data (MALDI-TOF spectra, AMR profiles and EHR); on the LLM side, I design learning scaffolds for LLM post-training, inspired by the cognitive learning strategies of humans.</p>
       </div>
       <ul class="links">
         <li><a href="mailto:changl8@andrew.cmu.edu">
@@ -406,28 +373,6 @@ footer { border-top: 1px solid var(--hair); padding-block: 1.5rem 2.25rem; }
     </figure>
   </div>
 </header>
-
-<!-- =========================== RESEARCH =========================== -->
-<section class="section" id="research">
-  <div class="wrap">
-    <div class="sec-head">
-      <p class="eyebrow">Research</p>
-      <div class="rule"></div>
-    </div>
-
-    <div class="fronts">
-      <article class="front front--health">
-        <h3>Affordable outbreak detection</h3>
-        <p>Detecting hospital outbreaks with multimodal models trained on routinely available multimodal data: <strong>MALDI-TOF mass spectra</strong>, <strong>antimicrobial resistance profiles</strong>, and <strong>electronic health records</strong>. The aim is to reduce dependency on the whole-genome sequencing gold standard, so that specialist-grade detection stays affordable for every hospital.</p>
-      </article>
-
-      <article class="front front--llm">
-        <h3>Self-improving open models</h3>
-        <p>Improving LLM reasoning through better extraction and use of <strong>experiential abstractions</strong>, via <strong>in-context learning</strong> or <strong>post-training</strong>. The aim is to distill expert tips and past trajectories in the form of abstractions into open-source models and allow self-improvement.</p>
-      </article>
-    </div>
-  </div>
-</section>
 
 <!-- ========================== EDUCATION ========================== -->
 <section class="section" id="education">
@@ -486,7 +431,7 @@ footer { border-top: 1px solid var(--hair); padding-block: 1.5rem 2.25rem; }
     <div class="filters" role="group" aria-label="Filter publications by topic">
       <button class="filter" type="button" data-filter="all" aria-pressed="true">All <span class="count">(10)</span></button>
       <button class="filter" type="button" data-filter="health" aria-pressed="false">ML for healthcare <span class="count">(6)</span></button>
-      <button class="filter" type="button" data-filter="llm" aria-pressed="false">Foundation models <span class="count">(4)</span></button>
+      <button class="filter" type="button" data-filter="llm" aria-pressed="false">LLM post-training <span class="count">(4)</span></button>
     </div>
 
     <ul class="pubs" id="pubs">
