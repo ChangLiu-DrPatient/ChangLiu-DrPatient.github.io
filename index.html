@@ -182,6 +182,9 @@ h1 {
   max-width: 62ch; font-size: .94rem; line-height: 1.6;
 }
 .affil p + p { margin-top: .7rem; }
+.affil strong { color: var(--ink); font-weight: 600; }
+.affil .kw-health { color: var(--signal); }
+.affil .kw-llm { color: var(--gold); white-space: nowrap; }
 .affil a {
   color: var(--ink); text-decoration: underline;
   text-decoration-color: var(--rule); text-underline-offset: .17em;
@@ -354,7 +357,7 @@ footer { border-top: 1px solid var(--hair); padding-block: 1.5rem 2.25rem; }
       <h1>Chang Liu</h1>
       <div class="affil">
         <p>I am a Ph.D. student in the Machine Learning Department at Carnegie Mellon University and a member of the Auton Lab, advised by Prof. Artur Dubrawski. I did my undergraduate studies in the Yao Class at Tsinghua University.</p>
-        <p>My research spans machine learning for healthcare and LLM post-training. My work aims to democratize expertise: on the healthcare side, I develop affordable outbreak detection systems for hospitals using multimodal ML on routinely collected data (MALDI-TOF spectra, AMR profiles and EHR); on the LLM side, I design learning scaffolds for LLM post-training, inspired by the cognitive learning strategies of humans.</p>
+        <p>My research spans <strong class="kw-health">machine learning for healthcare</strong> and <strong class="kw-llm">LLM post-training</strong>. My work aims to <strong>democratize expertise</strong>: on the healthcare side, I develop <strong>affordable outbreak detection</strong> systems for hospitals using multimodal ML on routinely collected data (MALDI-TOF spectra, AMR profiles and EHR); on the LLM side, I design <strong>learning scaffolds</strong> for LLM post-training, inspired by the cognitive learning strategies of humans.</p>
       </div>
       <ul class="links">
         <li><a href="mailto:changl8@andrew.cmu.edu">
