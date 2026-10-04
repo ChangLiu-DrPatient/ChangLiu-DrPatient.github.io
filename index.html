@@ -301,10 +301,11 @@ h1 {
 .venue.is-gold { color: var(--gold); }
 .pub-year { font-family: var(--mono); font-size: .72rem; letter-spacing: .09em; color: var(--faint); font-variant-numeric: tabular-nums; }
 .pub-title { font-size: 1.02rem; line-height: 1.4; margin: 0 0 .3rem; max-width: 60ch; }
-.pub-title a { text-decoration: underline; text-decoration-color: var(--rule); text-underline-offset: .17em; transition: color .18s var(--ease), text-decoration-color .18s var(--ease); }
-.pub-title a:hover { color: var(--signal); text-decoration-color: currentColor; }
 .authors { font-family: var(--mono); font-size: .8rem; line-height: 1.7; color: var(--faint); letter-spacing: .015em; margin: 0; max-width: 76ch; }
 .authors b { color: var(--muted); font-weight: 600; }
+.pub-links { font-family: var(--mono); font-size: .75rem; letter-spacing: .04em; margin: .3rem 0 0; }
+.pub-links a { color: var(--signal); border-bottom: 1px solid var(--signal-soft); padding-bottom: 1px; transition: border-color .18s var(--ease); }
+.pub-links a:hover { border-bottom-color: currentColor; }
 .pub-legend { font-family: var(--mono); font-size: .7rem; color: var(--faint); letter-spacing: .04em; margin-top: .9rem; }
 
 /* ---- personal ---- */
@@ -440,53 +441,63 @@ footer { border-top: 1px solid var(--hair); padding-block: 1.5rem 2.25rem; }
     <ul class="pubs" id="pubs">
       <li data-topic="llm">
         <div class="pub-meta"><span class="venue is-gold">EMNLP Findings</span><span class="pub-year">Aug 2026</span></div>
-        <p class="pub-title"><a href="https://arxiv.org/abs/2607.20372" rel="noopener">Notes to Self: Can LLMs Benefit from Experiential Abstractions?</a></p>
+        <p class="pub-title">Notes to Self: Can LLMs Benefit from Experiential Abstractions?</p>
         <p class="authors"><b>Chang Liu</b>, Xinyu Li, Artur Dubrawski*</p>
+        <p class="pub-links"><a href="https://arxiv.org/abs/2607.20372" rel="noopener">[link]</a></p>
       </li>
       <li data-topic="health">
         <div class="pub-meta"><span class="venue is-signal">AMIA Annual Symposium</span><span class="pub-year">May 2026</span></div>
         <p class="pub-title">Towards Practical Multimodal Outbreak Detection</p>
         <p class="authors"><b>Chang Liu</b>, Jieshi Chen, Alexander J. Sundermann, Kathleen Shutt, Marissa P. Griffith, Lora Lee Pless, Lee H. Harrison, Artur Dubrawski*</p>
+        <p class="pub-links"><a href="https://arxiv.org/abs/2603.20536" rel="noopener">[link]</a></p>
       </li>
       <li data-topic="health">
         <div class="pub-meta"><span class="venue is-signal">AMIA Amplify Informatics Conference</span><span class="pub-year">Feb 2026</span></div>
         <p class="pub-title">Exploring the Utility of MALDI-TOF Mass Spectrometry and Antimicrobial Resistance in Hospital Outbreak Detection</p>
         <p class="authors"><b>Chang Liu</b>, Jieshi Chen, Alexander J. Sundermann, Kathleen Shutt, Marissa P. Griffith, Lora Lee Pless, Lee H. Harrison, Artur Dubrawski*</p>
+        <p class="pub-links"><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC13274314/" rel="noopener">[link]</a></p>
       </li>
       <li data-topic="llm">
         <div class="pub-meta"><span class="venue is-gold">NeurIPS Workshop · LLM Eval</span><span class="pub-year">Sep 2025</span></div>
-        <p class="pub-title"><a href="https://openreview.net/forum?id=aP3sv2xrGH" rel="noopener">Depth as a Scaling Vector: Simple Pruning and Evaluation of Emergent Abilities in Pruned LLMs</a></p>
+        <p class="pub-title">Depth as a Scaling Vector: Simple Pruning and Evaluation of Emergent Abilities in Pruned LLMs</p>
         <p class="authors"><b>Chang Liu</b>†, Arjun Choudhry†, Yifu Cai, Nina Żukowska, Mononito Goswami, Artur Dubrawski</p>
+        <p class="pub-links"><a href="https://openreview.net/forum?id=aP3sv2xrGH" rel="noopener">[link]</a></p>
       </li>
       <li data-topic="llm">
         <div class="pub-meta"><span class="venue is-gold">NeurIPS Workshop · Efficient Reasoning</span><span class="pub-year">Sep 2025</span></div>
         <p class="pub-title">LayerMerge: Modality-Agnostic Depth Pruning for Efficient Foundation Model Deployment</p>
         <p class="authors">Arjun Choudhry†, <b>Chang Liu</b>†, Nina Żukowska, Yifu Cai, Mononito Goswami, Artur Dubrawski</p>
+        <p class="pub-links"><a href="https://openreview.net/forum?id=7jEz15AsVT" rel="noopener">[link]</a></p>
       </li>
       <li data-topic="llm">
         <div class="pub-meta"><span class="venue is-gold">NeurIPS Workshop · UniReps</span><span class="pub-year">Sep 2025</span></div>
         <p class="pub-title">From Aggregation to Guidance: Strategies for Personalized Federated Fine-Tuning of Foundation Models</p>
         <p class="authors">Mikołaj Piórczyński, Wojciech Łapacz, Xinyu Li, <b>Chang Liu</b>, Abby Turner, Artur Dubrawski</p>
+        <p class="pub-links"><a href="https://openreview.net/forum?id=wdYl0agN49" rel="noopener">[link]</a></p>
       </li>
       <li data-topic="health">
         <div class="pub-meta"><span class="venue is-signal">CHIL</span><span class="pub-year">Apr 2025</span></div>
         <p class="pub-title">Bridging the Utility Gap Between MALDI-TOF and WGS for Affordable Outbreak Cluster Detection</p>
         <p class="authors"><b>Chang Liu</b>, Jieshi Chen, Lee H. Harrison, Artur Dubrawski*</p>
+        <p class="pub-links"><a href="https://proceedings.mlr.press/v287/liu25a.html" rel="noopener">[link]</a></p>
       </li>
       <li data-topic="health">
         <div class="pub-meta"><span class="venue is-signal">arXiv preprint</span><span class="pub-year">Oct 2024</span></div>
         <p class="pub-title">Multimodal Structure Preservation Learning</p>
         <p class="authors"><b>Chang Liu</b>, Jieshi Chen, Lee H. Harrison, Artur Dubrawski*</p>
+        <p class="pub-links"><a href="https://arxiv.org/abs/2410.22520" rel="noopener">[link]</a></p>
       </li>
       <li data-topic="health">
         <div class="pub-meta"><span class="venue is-signal">PLOS Computational Biology</span><span class="pub-year">Apr 2024</span></div>
         <p class="pub-title">A Probabilistic Knowledge Graph Approach for Target Identification</p>
         <p class="authors"><b>Chang Liu</b>†, Kaimin Xiao†, Cuinan Yu†, Yipin Lei†, … Dan Zhao*, Fengfeng Zhou*, Haidong Tang*, Jianyang Zeng*</p>
+        <p class="pub-links"><a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1011945" rel="noopener">[link]</a></p>
       </li>
       <li data-topic="health">
         <div class="pub-meta"><span class="venue is-signal">Pacific Symposium on Biocomputing</span><span class="pub-year">Jan 2023</span></div>
         <p class="pub-title">Improving Target-disease Association Prediction through a Graph Neural Network with Credibility Information</p>
         <p class="authors"><b>Chang Liu</b>†, Cuinan Yu†, Yipin Lei†, … Dan Zhao*, Fengfeng Zhou*, Jianyang Zeng*</p>
+        <p class="pub-links"><a href="https://psb.stanford.edu/psb-online/proceedings/psb23/liu_c.pdf" rel="noopener">[link]</a></p>
       </li>
     </ul>
     <p class="pub-legend">† equal contribution &nbsp;·&nbsp; * corresponding author</p>
