@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Chang Liu (刘昶)</title>
-<meta name="description" content="Chang Liu, Ph.D. student in the Machine Learning Department at Carnegie Mellon University. Research on machine learning for affordable healthcare and on LLM post-training.">
+<meta name="description" content="Chang Liu, Ph.D. student in the Machine Learning Department at Carnegie Mellon University. Research on LLM post-training and on machine learning for affordable healthcare.">
 <meta property="og:title" content="Chang Liu (刘昶)">
 <meta property="og:description" content="Ph.D. student in the Machine Learning Department at Carnegie Mellon University.">
 <meta property="og:type" content="profile">
@@ -283,24 +283,17 @@ h1 {
 .out a:hover { border-bottom-color: currentColor; }
 
 /* ---- publications ---- */
-.filters { display: flex; flex-wrap: wrap; gap: .45rem; margin-bottom: 1.4rem; }
-.filter {
-  appearance: none; -webkit-appearance: none;
-  font-family: var(--mono); font-size: .73rem;
-  letter-spacing: .11em; text-transform: uppercase;
-  color: var(--muted); background: transparent;
-  border: 1px solid var(--rule); border-radius: 2px;
-  padding: .42rem .65rem; cursor: pointer;
-  transition: color .18s var(--ease), border-color .18s var(--ease), background .18s var(--ease);
+.pub-group {
+  font-family: var(--serif); font-weight: 600;
+  font-size: 1.14rem; letter-spacing: -.01em;
+  margin: 0 0 .4rem;
 }
-.filter:hover { color: var(--ink); border-color: var(--muted); }
-.filter[aria-pressed="true"] { color: var(--paper); background: var(--ink); border-color: var(--ink); }
-
-/* border on the list, not the last child: filtering can hide the last item */
+.pub-group.is-gold { color: var(--gold); }
+.pub-group.is-signal { color: var(--signal); }
+.pubs + .pub-group { margin-top: 2.25rem; }
 .pubs { list-style: none; margin: 0; padding: 0; border-bottom: 1px solid var(--hair); }
 .pubs li { border-top: 1px solid var(--hair); padding-block: 1.05rem; }
 .pubs li:first-child { border-top: none; }
-.pubs li[hidden] { display: none; }
 .pub-meta { display: flex; flex-wrap: wrap; align-items: baseline; gap: .4rem .8rem; margin-bottom: .35rem; }
 .venue { font-family: var(--mono); font-size: .72rem; letter-spacing: .11em; text-transform: uppercase; font-weight: 500; }
 .venue.is-signal { color: var(--signal); }
@@ -364,7 +357,7 @@ footer { border-top: 1px solid var(--hair); padding-block: 1.5rem 2.25rem; }
       <h1>Chang Liu <span class="name-zh" lang="zh-Hans">刘昶</span></h1>
       <div class="affil">
         <p>I am a Ph.D. student in the Machine Learning Department at Carnegie Mellon University and a member of the Auton Lab, advised by Prof. Artur Dubrawski. I did my undergraduate studies in the Yao Class at Tsinghua University.</p>
-        <p>My research spans <strong class="kw-health">machine learning for healthcare</strong> and <strong class="kw-llm">LLM post-training</strong>. My work aims to <strong>democratize expertise</strong>: on the healthcare side, I develop <strong>affordable outbreak detection</strong> systems for hospitals using multimodal ML on routinely collected data (MALDI-TOF spectra, AMR profiles and EHR); on the LLM side, I design <strong>learning scaffolds</strong> for LLM post-training, inspired by cognitive learning strategies of humans.</p>
+        <p>My research spans <strong class="kw-llm">LLM post-training</strong> and <strong class="kw-health">machine learning for healthcare</strong>. My work aims to <strong>democratize expertise</strong>: on the LLM side, I design <strong>learning scaffolds</strong> for LLM post-training, inspired by cognitive learning strategies of humans; on the healthcare side, I develop <strong>affordable outbreak detection</strong> systems for hospitals using multimodal ML on routinely collected data (MALDI-TOF spectra, AMR profiles and EHR).</p>
       </div>
       <ul class="links">
         <li><a href="mailto:changl8@andrew.cmu.edu">
@@ -438,74 +431,73 @@ footer { border-top: 1px solid var(--hair); padding-block: 1.5rem 2.25rem; }
       <div class="rule"></div>
     </div>
 
-    <div class="filters" role="group" aria-label="Filter publications by topic">
-      <button class="filter" type="button" data-filter="all" aria-pressed="true">All <span class="count">(10)</span></button>
-      <button class="filter" type="button" data-filter="health" aria-pressed="false">ML for healthcare <span class="count">(6)</span></button>
-      <button class="filter" type="button" data-filter="llm" aria-pressed="false">LLM post-training <span class="count">(4)</span></button>
-    </div>
-
-    <ul class="pubs" id="pubs">
-      <li data-topic="health">
-        <div class="pub-meta"><span class="venue is-signal">Infection Control &amp; Hospital Epidemiology</span><span class="pub-year">Oct 2026</span></div>
-        <p class="pub-title">MALDI-TOF for Healthcare Transmission Prediction: Comparison with Whole Genome Sequencing</p>
-        <p class="authors">Alexander J. Sundermann*, Jieshi Chen, <b>Chang Liu</b>, Marissa P. Griffith, Kathleen Shutt, Hannah Creager, Artur Dubrawski, Lora Lee Pless, Lee H. Harrison</p>
-        <p class="pub-links"><a href="https://www.cambridge.org/core/journals/infection-control-and-hospital-epidemiology/article/malditof-for-healthcare-transmission-prediction-comparison-with-whole-genome-sequencing/D2F3C7F3B3FCBE338CC5840538D6314C" rel="noopener">[link]</a></p>
-      </li>
-      <li data-topic="llm">
+    <h3 class="pub-group is-gold">LLM Research</h3>
+    <ul class="pubs">
+      <li>
         <div class="pub-meta"><span class="venue is-gold">EMNLP Findings</span><span class="pub-year">Aug 2026</span></div>
         <p class="pub-title">Notes to Self: Can LLMs Benefit from Experiential Abstractions?</p>
         <p class="authors"><b>Chang Liu</b>, Xinyu Li, Artur Dubrawski*</p>
         <p class="pub-links"><a href="https://arxiv.org/abs/2607.20372" rel="noopener">[link]</a></p>
       </li>
-      <li data-topic="health">
-        <div class="pub-meta"><span class="venue is-signal">AMIA Annual Symposium</span><span class="pub-year">May 2026</span></div>
-        <p class="pub-title">Towards Practical Multimodal Hospital Outbreak Detection</p>
-        <p class="authors"><b>Chang Liu</b>, Jieshi Chen, Alexander J. Sundermann, Kathleen Shutt, Marissa P. Griffith, Lora Lee Pless, Lee H. Harrison, Artur Dubrawski*</p>
-        <p class="pub-links"><a href="https://arxiv.org/abs/2603.20536" rel="noopener">[link]</a></p>
-      </li>
-      <li data-topic="health">
-        <div class="pub-meta"><span class="venue is-signal">AMIA Amplify Informatics Conference</span><span class="pub-year">Feb 2026</span></div>
-        <p class="pub-title">Exploring the Utility of MALDI-TOF Mass Spectrometry and Antimicrobial Resistance in Hospital Outbreak Detection</p>
-        <p class="authors"><b>Chang Liu</b>, Jieshi Chen, Alexander J. Sundermann, Kathleen Shutt, Marissa P. Griffith, Lora Lee Pless, Lee H. Harrison, Artur Dubrawski*</p>
-        <p class="pub-links"><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC13274314/" rel="noopener">[link]</a></p>
-      </li>
-      <li data-topic="llm">
+      <li>
         <div class="pub-meta"><span class="venue is-gold">NeurIPS Workshop · LLM Eval</span><span class="pub-year">Sep 2025</span></div>
         <p class="pub-title">Depth as a Scaling Vector: Simple Pruning and Evaluation of Emergent Abilities in Pruned LLMs</p>
         <p class="authors"><b>Chang Liu</b>†, Arjun Choudhry†, Yifu Cai, Nina Żukowska, Mononito Goswami, Artur Dubrawski</p>
         <p class="pub-links"><a href="https://openreview.net/forum?id=aP3sv2xrGH" rel="noopener">[link]</a></p>
       </li>
-      <li data-topic="llm">
+      <li>
         <div class="pub-meta"><span class="venue is-gold">NeurIPS Workshop · Efficient Reasoning</span><span class="pub-year">Sep 2025</span></div>
         <p class="pub-title">LayerMerge: Modality-Agnostic Depth Pruning for Efficient Foundation Model Deployment</p>
         <p class="authors">Arjun Choudhry†, <b>Chang Liu</b>†, Nina Żukowska, Yifu Cai, Mononito Goswami, Artur Dubrawski</p>
         <p class="pub-links"><a href="https://openreview.net/forum?id=7jEz15AsVT" rel="noopener">[link]</a></p>
       </li>
-      <li data-topic="llm">
+      <li>
         <div class="pub-meta"><span class="venue is-gold">NeurIPS Workshop · UniReps</span><span class="pub-year">Sep 2025</span></div>
         <p class="pub-title">From Aggregation to Guidance: Strategies for Personalized Federated Fine-Tuning of Foundation Models</p>
         <p class="authors">Mikołaj Piórczyński, Wojciech Łapacz, Xinyu Li, <b>Chang Liu</b>, Abby Turner, Artur Dubrawski</p>
         <p class="pub-links"><a href="https://openreview.net/forum?id=wdYl0agN49" rel="noopener">[link]</a></p>
       </li>
-      <li data-topic="health">
+    </ul>
+
+    <h3 class="pub-group is-signal">Healthcare Research</h3>
+    <ul class="pubs">
+      <li>
+        <div class="pub-meta"><span class="venue is-signal">Infection Control &amp; Hospital Epidemiology</span><span class="pub-year">Oct 2026</span></div>
+        <p class="pub-title">MALDI-TOF for Healthcare Transmission Prediction: Comparison with Whole Genome Sequencing</p>
+        <p class="authors">Alexander J. Sundermann*, Jieshi Chen, <b>Chang Liu</b>, Marissa P. Griffith, Kathleen Shutt, Hannah Creager, Artur Dubrawski, Lora Lee Pless, Lee H. Harrison</p>
+        <p class="pub-links"><a href="https://www.cambridge.org/core/journals/infection-control-and-hospital-epidemiology/article/malditof-for-healthcare-transmission-prediction-comparison-with-whole-genome-sequencing/D2F3C7F3B3FCBE338CC5840538D6314C" rel="noopener">[link]</a></p>
+      </li>
+      <li>
+        <div class="pub-meta"><span class="venue is-signal">AMIA Annual Symposium</span><span class="pub-year">May 2026</span></div>
+        <p class="pub-title">Towards Practical Multimodal Hospital Outbreak Detection</p>
+        <p class="authors"><b>Chang Liu</b>, Jieshi Chen, Alexander J. Sundermann, Kathleen Shutt, Marissa P. Griffith, Lora Lee Pless, Lee H. Harrison, Artur Dubrawski*</p>
+        <p class="pub-links"><a href="https://arxiv.org/abs/2603.20536" rel="noopener">[link]</a></p>
+      </li>
+      <li>
+        <div class="pub-meta"><span class="venue is-signal">AMIA Amplify Informatics Conference</span><span class="pub-year">Feb 2026</span></div>
+        <p class="pub-title">Exploring the Utility of MALDI-TOF Mass Spectrometry and Antimicrobial Resistance in Hospital Outbreak Detection</p>
+        <p class="authors"><b>Chang Liu</b>, Jieshi Chen, Alexander J. Sundermann, Kathleen Shutt, Marissa P. Griffith, Lora Lee Pless, Lee H. Harrison, Artur Dubrawski*</p>
+        <p class="pub-links"><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC13274314/" rel="noopener">[link]</a></p>
+      </li>
+      <li>
         <div class="pub-meta"><span class="venue is-signal">CHIL</span><span class="pub-year">Apr 2025</span></div>
         <p class="pub-title">Bridging the Utility Gap Between MALDI-TOF and WGS for Affordable Outbreak Cluster Detection</p>
         <p class="authors"><b>Chang Liu</b>, Jieshi Chen, Lee H. Harrison, Artur Dubrawski*</p>
         <p class="pub-links"><a href="https://proceedings.mlr.press/v287/liu25a.html" rel="noopener">[link]</a></p>
       </li>
-      <li data-topic="health">
+      <li>
         <div class="pub-meta"><span class="venue is-signal">arXiv preprint</span><span class="pub-year">Oct 2024</span></div>
         <p class="pub-title">Multimodal Structure Preservation Learning</p>
         <p class="authors"><b>Chang Liu</b>, Jieshi Chen, Lee H. Harrison, Artur Dubrawski*</p>
         <p class="pub-links"><a href="https://arxiv.org/abs/2410.22520" rel="noopener">[link]</a></p>
       </li>
-      <li data-topic="health">
+      <li>
         <div class="pub-meta"><span class="venue is-signal">PLOS Computational Biology</span><span class="pub-year">Apr 2024</span></div>
         <p class="pub-title">A Probabilistic Knowledge Graph for Target Identification</p>
         <p class="authors"><b>Chang Liu</b>†, Kaimin Xiao†, Cuinan Yu†, Yipin Lei†, … Dan Zhao*, Fengfeng Zhou*, Haidong Tang*, Jianyang Zeng*</p>
         <p class="pub-links"><a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1011945" rel="noopener">[link]</a></p>
       </li>
-      <li data-topic="health">
+      <li>
         <div class="pub-meta"><span class="venue is-signal">Pacific Symposium on Biocomputing</span><span class="pub-year">Jan 2023</span></div>
         <p class="pub-title">Improving Target-disease Association Prediction through a Graph Neural Network with Credibility Information</p>
         <p class="authors"><b>Chang Liu</b>†, Cuinan Yu†, Yipin Lei†, … Dan Zhao*, Fengfeng Zhou*, Jianyang Zeng*</p>
@@ -586,31 +578,6 @@ footer { border-top: 1px solid var(--hair); padding-block: 1.5rem 2.25rem; }
   var onScroll = function () { nav.setAttribute("data-stuck", String(window.scrollY > 12)); };
   onScroll();
   window.addEventListener("scroll", onScroll, { passive: true });
-
-  /* ---------- publication filter ---------- */
-  var filters = document.querySelectorAll(".filter");
-  var pubs = document.querySelectorAll("#pubs > li");
-
-  /* derive counts from the list itself — hardcoded ones drift as papers are added */
-  filters.forEach(function (btn) {
-    var want = btn.getAttribute("data-filter");
-    var n = 0;
-    pubs.forEach(function (li) {
-      if (want === "all" || li.getAttribute("data-topic") === want) n++;
-    });
-    var slot = btn.querySelector(".count");
-    if (slot) slot.textContent = "(" + n + ")";
-  });
-
-  filters.forEach(function (btn) {
-    btn.addEventListener("click", function () {
-      var want = btn.getAttribute("data-filter");
-      filters.forEach(function (b) { b.setAttribute("aria-pressed", String(b === btn)); });
-      pubs.forEach(function (li) {
-        li.hidden = !(want === "all" || li.getAttribute("data-topic") === want);
-      });
-    });
-  });
 })();
 </script>
 
